@@ -5,6 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SaludoComponent } from './components/saludo/saludo.component';
 
+// Modulo personalizado que exporta componente de  tipo Lista
+import { ListsModule } from './modules/lists/lists.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +15,9 @@ import { SaludoComponent } from './components/saludo/saludo.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    // Importamos nuestro módulo personalizado
+    ListsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

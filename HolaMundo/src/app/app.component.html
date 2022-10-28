@@ -312,7 +312,7 @@
 
   <!-- Al modificar el input se renderiza el app-saludo, lo estamos pasando a la variable usuario -->
   <app-saludo [nombre]="usuario" (mensajeEMitter)="recibirMensajeDelHijo($event)"></app-saludo>
-  <app-saludo (mensajeEMitter)="recibirMensajeDelHijo($event)"></app-saludo>
+  <!-- <app-saludo (mensajeEMitter)="recibirMensajeDelHijo($event)"></app-saludo> -->
 
   <!-- <app-saludo nombre="Pepe"></app-saludo>
   <app-saludo></app-saludo> -->
