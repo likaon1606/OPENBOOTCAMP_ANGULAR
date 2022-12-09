@@ -308,12 +308,20 @@
   <!-- <h1>Hola, {{ nombre }}!</h1> -->
 
   <!-- Input para trabajar con NgModel -->
-  <input type="text" placeholder="Nombre del usuario" [(ngModel)]="usuario" />
+  <!-- <input type="text" placeholder="Nombre del usuario" [(ngModel)]="usuario" /> -->
 
   <!-- Al modificar el input se renderiza el app-saludo, lo estamos pasando a la variable usuario -->
-  <app-saludo [nombre]="usuario" (mensajeEMitter)="recibirMensajeDelHijo($event)"></app-saludo>
+  <!-- <app-saludo [nombre]="usuario" (mensajeEMitter)="recibirMensajeDelHijo($event)"></app-saludo> -->
   <!-- <app-saludo (mensajeEMitter)="recibirMensajeDelHijo($event)"></app-saludo> -->
 
   <!-- <app-saludo nombre="Pepe"></app-saludo>
   <app-saludo></app-saludo> -->
+
+  <!--? Ejemplo de uso de Servicio  -->
+    <!-- <app-lista-contactos></app-lista-contactos> -->
+
+    <!--? Ejemplo de petición HTTP -->
+    <app-login-form></app-login-form>
+
+
 </div>

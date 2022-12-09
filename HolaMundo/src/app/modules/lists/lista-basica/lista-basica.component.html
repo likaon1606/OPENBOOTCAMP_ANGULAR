@@ -3,7 +3,7 @@
 <p [ngStyle]="{color: 'tomato', fontWeight: 'bolder'}">lista de elementos: </p>
 <p ngClass="underlined">Aquí vamos a iterar sobre una lista y mostrar varios elementos</p>
 
-<p [ngClass]="['underlined', 'small']">Te recomendamos crear un elemento</p>
+<p [ngClass]="['underlined', 'small']">Aún no tienes elementos en la lista</p>
 <p [ngClass]="{underlined: false, small: true}">Te recomendamos crear un elemento</p>
 
 
@@ -25,7 +25,7 @@
 
 <!-- Bloque para explicar el uso de NGFOR -->
 
-<!-- Iteramos en la lista de productos  -->
+<!-- Iteramos en la lista de productos, con even se sabe si es par  -->
 <div *ngFor="let producto of listaElementos; let i = index; let even = even">
   <!-- Ámbito de FOR donde tenermo acceso a "producto" -->
   <div [ngStyle]="even ? {backgroundColor: 'blue', color: 'white'} : {backgroundColor: 'green', color: 'white'}" class="producto">
